@@ -10,6 +10,6 @@ create table hobbies (
 	id int primary key,
     Name_hobbies varchar(255) check(Name_hobbies > 4),
     person_id int,
-    foreign key (person_id) references PERSONS (person_id),
+    foreign key (person_id) references PERSONS (person_id)
 );
 SELECT Name_hobbies From hobbies;
